@@ -167,6 +167,12 @@ public final class SCProxy
                 {
                     return getAddress().getPort();
                 }
+
+                @Override
+                public String toString()
+                {
+                    return getHost() + ":" + getPort() + "@" + getConnectionType();
+                }
             };
         }
     }
